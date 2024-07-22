@@ -1,0 +1,21 @@
+{
+    "ABeeZee": {
+        "400regular": true,
+        "400italic": true
+    },
+    "Roboto": {
+        "400regular": true,
+        "400italic": true,
+        "700regular": true,
+        "700italic": true
+    },
+    "Open Sans": {
+        "400regular": true,
+        "400italic": true,
+        "600regular": true,
+        "600italic": true,
+        "700regular": true,
+        "700italic": true
+    }
+    
+}
