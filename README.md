@@ -1,46 +1,64 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FontSelector
 
-## Available Scripts
+## Overview
+This project is a React + TypeScript application that allows users to select a font family, font weight, and italic style for a text editor. The application supports Google Fonts and provides a user-friendly interface to change the font style instantly. It also features an auto-save functionality that retains the user's selections even after refreshing the page.
 
-In the project directory, you can run:
+## Features
+- Select from a list of Google Fonts.
+- Choose the appropriate font weights for the selected font family.
+- Toggle italic style if supported by the selected font.
+- Auto-save functionality to retain text and font selections.
+- Responsive and functional UI.
 
-### `npm start`
+## Technologies Used
+- React
+- TypeScript
+- CSS (for styling)
+- Local Storage (for auto-saving)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup Instructions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (Node Package Manager)
 
-### `npm test`
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/font-selector-app.git
+   cd font-selector-app
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+### Running the Application
+1. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Using the Application
+1. **Select a Font Family:** Click on the font family dropdown to view and select from the available Google Fonts.
+2. **Choose Font Weight:** After selecting a font family, the corresponding font weights will be displayed. Choose the desired weight.
+3. **Toggle Italic Style:** If the selected font supports italic, you can toggle the italic option.
+4. **Text Input:** Type your text in the provided text area. The font style will change instantly based on your selections.
+5. **Auto-Save:** Your text and font selections will be saved in the browser's local storage. When you refresh the page, the previous selections will be restored.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Assumptions
+- The font data is provided in a JSON format that maps font names to their respective variants.
+- The application handles cases where the selected font does not support the chosen weight or italic style by providing the closest available options.
 
-### `npm run eject`
+## Future Improvements
+- Implement unit tests for critical components.
+- Enhance error handling for unsupported font selections.
+- Improve UI/UX design for better user experience.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
